@@ -27,9 +27,7 @@ Happy hacking!
 with which to kickstart AngularJS projects. It contains a best-practice
 directory structure to ensure code reusability and maximum scalability.
 ngBoilerplate also comes prepackaged with the most popular design frameworks
-around: [Twitter Bootstrap](http://getbootstrap.com),
 [Angular UI](http://angular-ui.github.io),
-[Angular Bootstrap](http://angular-ui.github.io/bootstrap),
 [Font Awesome](http://fortawesome.github.com/Font-Awesome), and
 [LESS](http://lesscss.org). Lastly, it contains a sophisticated
 [Grunt](http://gruntjs.org)-based build system to ensure maximum productivity.
@@ -85,8 +83,6 @@ ng-boilerplate/
   |  |- less/
   |  |  |- main.less
   |- vendor/
-  |  |- angular-bootstrap/
-  |  |- bootstrap/
   |  |- placeholders/
   |- .bowerrc
   |- bower.json
@@ -163,8 +159,8 @@ This will read the `dependencies` (empty by default) and the `devDependencies`
 (which contains our build requirements) from `package.json` and install
 everything needed into a folder called `node_modules/`.
 
-There are many Bower packages used by `ngBoilerplate`, like Twitter Bootstrap
-and Angular UI, which are listed in `bower.js`. To install them into the
+There are many Bower packages used by `ngBoilerplate`, like
+Angular UI, which are listed in `bower.js`. To install them into the
 `vendor/` directory, simply run:
 
 ```sh
@@ -224,7 +220,7 @@ $ grunt compile
 This will concatenate and minify your sources and place them by default into the
 `bin/` directory. There will only be three files: `index.html`,
 `your-app-name.js`, and `your-app-name.css`. All of the vendor dependencies like
-Bootstrap styles and AngularJS itself have been added to them for super-easy
+AngularJS itself have been added to them for super-easy
 deploying. If you use any assets (`src/assets/`) then they will be copied to
 `bin/` as is.
 
